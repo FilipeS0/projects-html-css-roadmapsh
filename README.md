@@ -13,7 +13,7 @@ You can run the [link](https://roadmap.sh/projects/single-page-cv) to see the in
 ## Features
 
 Structured layout with sections for education, skills, and experience.
-Use of semantic HTML5 tags (e.g., `<header>, <section>, <footer>, <article>`).
+Use of semantic HTML5 tags (e.g., `<header>`, `<section>`, `<footer>`, `<article>`).
 Basic accessibility considerations.
 
 ## Getting Started
