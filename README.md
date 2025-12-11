@@ -6,10 +6,14 @@ Single-Page HTML CV.
 
 This project is a single-page Curriculum Vitae built exclusively with HTML (no CSS or JavaScript) as a learning exercise. The main goal was to focus on semantic structure and content organization using native HTML elements.
 
+## Instructions
+
+You can run the (link)[https://roadmap.sh/projects/single-page-cv] to see the instructions I've needed to follow.
+
 ## Features
 
 Structured layout with sections for education, skills, and experience.
-Use of semantic HTML5 tags (e.g., <header>, <section>, <footer>, <article>).
+Use of semantic HTML5 tags (e.g., `<header>, <section>, <footer>, <article>`).
 Basic accessibility considerations.
 
 ## Getting Started
