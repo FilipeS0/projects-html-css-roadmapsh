@@ -12,7 +12,7 @@ This project is a personal portfolio website created to practice semantic HTML s
 
 ## My project
 
-You can access my project by clicking [here](https://filipes0.github.io/basic-html-website/)
+You can access my project by clicking [here](https://filipes0.github.io/basic-html-website/).
 
 ## Features
 
