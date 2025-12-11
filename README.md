@@ -36,7 +36,7 @@ Feedback and suggestions are highly appreciated! Feel free to open an issue or c
 
 ## Author
 
-**Linkedin**: [linkedin](https://linkedin.com/in/filipes0)
+**Linkedin**: [linkedin](https://linkedin.com/in/filipes0)  
 **GitHub**: [github](https://github.com/FilipeS0)
 
 ## License
