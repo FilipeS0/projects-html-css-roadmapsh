@@ -61,9 +61,11 @@ portifolio-website/
 -   **Home (`index.html`)** — Main page, currently styled.
 -   **Projects, Articles, Contact** — Content exists; styling pending.
 
-## See the GitHub Pages
+## Important pages
 
-[Visit in this link](https://filipes0.github.io/portifolio-website/)
+[The goal is this one](https://roadmap.sh/projects/portfolio-website)
+
+[My project is this one](https://filipes0.github.io/portifolio-website/)
 
 ## Feedback
 
