@@ -45,6 +45,10 @@ ul li a {
 }
 
 @media (min-width: 519px) {
+    header div p {
+        font-size: clamp(1rem, 1.7vw, 3rem);
+    }
+
     header {
         flex-flow: row wrap;
         justify-content: space-between;
@@ -53,10 +57,20 @@ ul li a {
     header div {
         flex-flow: row;
         align-items: center;
+        min-width: 30%;
+        max-width: 45%;
     }
 
     header nav {
         min-width: 20%;
         max-width: 45%;
+    }
+
+    .first-heading {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
     }
 }
