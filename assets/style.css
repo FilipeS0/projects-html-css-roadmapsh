@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 900px;
+    height: 900px;
+
+    margin: 0 auto;
+}
+
+.header-bar {
+    display: flex;
+}
+
+.data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.data input {
+    width: 25%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: black;
+}
+
+.data input:nth-child(1) {
+    width: 20%;
+}
+
+.data input:nth-child(3) {
+    width: 25%;
+}
+
+.data input::placeholder {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.calendar-icon img {
+    width: 30%;
+}
