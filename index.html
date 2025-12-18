@@ -3,7 +3,39 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Testimonial Cards — CSS Layout Exercise</title>
+        <meta
+            name="description"
+            content="A small demo of testimonial cards to practice CSS layout and positioning techniques (Flexbox, positioning, responsive sizing)."
+        />
+        <meta
+            name="keywords"
+            content="testimonial cards, css exercise, layout, positioning, flexbox, responsive"
+        />
+        <meta name="author" content="FilipeS0" />
+        <meta name="robots" content="index,follow" />
+
+        <meta
+            property="og:title"
+            content="Testimonial Cards — CSS Layout Exercise"
+        />
+        <meta
+            property="og:description"
+            content="Practice CSS layout and positioning with a set of responsive testimonial cards."
+        />
+        <meta property="og:image" content="image/man-smiling.jpg" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Testimonial Cards — CSS Layout Exercise"
+        />
+        <meta
+            name="twitter:description"
+            content="Practice CSS layout and positioning with a set of responsive testimonial cards."
+        />
+
         <link rel="stylesheet" href="assets/style.css" />
     </head>
     <body>
@@ -40,21 +72,35 @@
                 </p>
 
                 <div class="img-plus-name">
-                    <img src="" alt="" />
-                    <p>Artem Jones</p>
-                    <p>Junior Frontend Developer</p>
+                    <img
+                        src="image/face.webp"
+                        alt="A woman's face"
+                        class="round-image"
+                    />
+                    <div class="name-role">
+                        <p>Artem Jones</p>
+                        <p>Junior Frontend Developer</p>
+                    </div>
                 </div>
             </div>
 
             <div class="third-card">
-                <div class="img">
-                    <img src="" alt="" />
+                <div class="image">
+                    <img
+                        src="image/man-smiling.jpg"
+                        alt="a smiling man's photo "
+                        class="full-photo"
+                    />
                 </div>
 
                 <div class="side-review">
-                    <img src="" alt="" />
-                    <p>Jackie Mackle</p>
-                    <p>Engineering Manager</p>
+                    <img
+                        src="image/5stars.webp"
+                        alt="5 stars rating"
+                        class="rating"
+                    />
+                    <p class="big-name">Jackie Mackle</p>
+                    <p class="role">Engineering Manager</p>
                     <p>
                         I find myself recommending roadmap.sh to all the
                         internees or junior developers. It's a great way to
@@ -72,7 +118,13 @@
                     then.
                 </p>
 
-                <img src="" alt="" />
+                <div class="carrossel">
+                    <p>&lt;</p>
+                    <img src="image/face.webp" alt="woman smiling" />
+                    <img src="image/face.webp" alt="woman smiling" />
+                    <img src="image/face.webp" alt="woman smiling" />
+                    <p>&gt;</p>
+                </div>
 
                 <p>Artem Jones</p>
             </div>

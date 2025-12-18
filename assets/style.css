@@ -1,8 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "roboto";
+}
+
 .container {
     margin: 0 auto;
-    width: 80%;
+    width: 936px;
     display: flex;
     flex-flow: wrap;
+    gap: 2vw;
 }
 
 .triangle {
@@ -11,27 +21,35 @@
     height: 18px;
     rotate: 45deg;
     margin-top: -10px;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .first-comment {
     background-color: black;
     color: white;
     border-radius: 20px;
-    padding: 10px;
+    padding: 20px;
 
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.first-comment p {
+    padding-bottom: 10px;
+    font-size: clamp(1rem, 1.5rem, 2rem);
 }
 
 .first-card {
-    max-width: 40%;
+    max-width: 45%;
+    margin-top: 2vh;
+    height: fit-content;
 }
 
 .round-image {
-    margin: 10px;
-    width: 15%;
+    margin: 10px 10px 0 10px;
+    width: 90px;
     border-radius: 50%;
 }
 
@@ -43,5 +61,119 @@
 .name-role {
     display: flex;
     flex-flow: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.name-role p {
+    margin: 0;
+    font-size: clamp(1.2rem, 1.5rem, 1.8rem);
+}
+
+.name-role p:nth-last-child(1) {
+    font-size: clamp(0.75rem, 1rem, 1.2rem);
+}
+
+.second-card {
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 47%;
+    height: fit-content;
+    padding: 20px;
+    margin-top: 2vh;
+}
+
+.second-card p {
+    padding-bottom: 10px;
+    font-size: clamp(1rem, 1.5rem, 2rem);
+}
+
+.third-card {
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.image {
+    width: 43%;
+}
+
+.full-photo {
+    border-radius: 25px;
+    padding: 0px;
+    width: 100%;
+}
+
+.side-review {
+    width: 55%;
+    padding: 25px;
+    border-radius: 20px;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    background-color: black;
+    color: white;
+}
+
+.rating {
+    width: 30%;
+}
+
+.big-name {
+    font-size: clamp(1.5rem, 2rem, 2.5rem);
+    font-weight: 700;
+    margin: 10px 0 0;
+}
+
+.role {
+    color: gray;
+    font-size: clamp(1.2rem, 1.5rem, 1.8rem);
+}
+
+.side-review p:nth-last-child(1) {
+    margin-top: 15px;
+    font-size: clamp(1.2rem, 1.4rem, 1.7rem);
+}
+
+.last-card {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 15px;
+
+    display: flex;
+    flex-flow: column;
     gap: 10px;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.last-card p {
+    max-width: 70%;
+    font-size: 1.4rem;
+}
+
+.carrossel {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrossel img {
+    border-radius: 50%;
+    width: 90px;
+}
+
+.carrossel img:nth-child(2),
+.carrossel img:nth-child(4) {
+    filter: opacity(60%);
+    width: 69px;
+    height: 82px;
 }
