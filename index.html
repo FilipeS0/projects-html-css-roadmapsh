@@ -3,7 +3,24 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Acessible Form UI</title>
+        <title>Accessible Form UI — Static HTML & CSS Demo</title>
+        <meta name="description" content="A static, accessible form UI built with only HTML and CSS — includes full name, email, password fields, password visibility toggle, and a profile completeness UI. Designed for accessibility and future JavaScript enhancements." />
+        <meta name="keywords" content="accessible form, HTML CSS form, accessibility, UX, password toggle, profile completeness, WCAG" />
+        <meta name="author" content="FilipeS0" />
+        <meta name="robots" content="index, follow" />
+
+        <!-- Open Graph / Social -->
+        <meta property="og:title" content="Accessible Form UI — Static HTML & CSS Demo" />
+        <meta property="og:description" content="A static, accessible form UI built with only HTML and CSS — includes full name, email, password fields, password visibility toggle, and a profile completeness UI." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://filipes0.github.io/accessible-form-ui" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:creator" content="@FilipeS0" />
+
+        <link rel="canonical" href="https://filipes0.github.io/accessible-form-ui" />
+
         <link rel="stylesheet" href="assets/style.css" />
         <link
             rel="stylesheet"
@@ -21,16 +38,32 @@
                             name="name"
                             id="name"
                             placeholder="What should we call you?"
+                            required
+                            aria-required="true"
                         />
+                        <div class="error-message error-name">
+                            <p>Fill with a valid name</p>
+                        </div>
                     </div>
 
-                    <label for="email">Email</label>
-                    <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="Type your email here"
-                    />
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Type your email here"
+                            required
+                            aria-required="true"
+                            aria-invalid="true"
+                        />
+                        <div class="error-message error-email">
+                            <p>Fill with a valid email</p>
+                        </div>
+                        <div class="error-message">
+                            <p>Email is already taken</p>
+                        </div>
+                    </div>
 
                     <div class="input">
                         <label for="password">Enter Password</label>
@@ -39,10 +72,17 @@
                             name="password"
                             id="password"
                             placeholder="xxxxxxxx"
+                            required
+                            aria-required="true"
                         />
-                        <span class="material-symbols-outlined">
-                            visibility
-                        </span>
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                visibility
+                            </span>
+                        </a>
+                        <div class="error-message error-pass">
+                            <p>Password invalid</p>
+                        </div>
                     </div>
 
                     <div class="input">
@@ -52,10 +92,17 @@
                             name="con-password"
                             id="con-password"
                             placeholder="xxxxxxxx"
+                            required
+                            aria-required="true"
                         />
-                        <span class="material-symbols-outlined">
-                            visibility
-                        </span>
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                visibility
+                            </span>
+                        </a>
+                        <div class="error-message error-conpass">
+                            <p>Passwords are not matching</p>
+                        </div>
                     </div>
 
                     <input type="submit" value="Update Profile" />
@@ -78,7 +125,6 @@
                         <li>Update Roadmap Progress</li>
                         <li>Setup Public Profile</li>
                         <li>Complete your first project</li>
-                        <li>Inivite our Friends</li>
                     </ul>
                 </div>
             </div>
