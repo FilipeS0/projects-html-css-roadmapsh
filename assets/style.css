@@ -146,7 +146,6 @@ input[type="submit"]:focus-visible {
 
 .error-message {
     display: none;
-    color: red;
 }
 
 .error-message p {
