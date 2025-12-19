@@ -149,14 +149,12 @@ input[type="submit"]:focus-visible {
     color: red;
 }
 
-.invalid {
-    border: 3px solid red;
+.error-message p {
+    color: red;
 }
 
-.error-message-displayed p {
-    font-size: 1rem;
-    color: red;
-    margin-bottom: 10px;
+.invalid {
+    border: 3px solid red;
 }
 
 a {
