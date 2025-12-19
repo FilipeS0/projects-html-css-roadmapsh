@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Acessible Form UI</title>
+        <link rel="stylesheet" href="assets/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=visibility"
+        />
+    </head>
+    <body>
+        <section class="container">
+            <div class="half-container">
+                <form>
+                    <div class="input">
+                        <label for="name">Full Name</label>
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="What should we call you?"
+                        />
+                    </div>
+
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Type your email here"
+                    />
+
+                    <div class="input">
+                        <label for="password">Enter Password</label>
+                        <input
+                            type="password"
+                            name="password"
+                            id="password"
+                            placeholder="xxxxxxxx"
+                        />
+                        <span class="material-symbols-outlined">
+                            visibility
+                        </span>
+                    </div>
+
+                    <div class="input">
+                        <label for="con-password">Confirm Password</label>
+                        <input
+                            type="password"
+                            name="con-password"
+                            id="con-password"
+                            placeholder="xxxxxxxx"
+                        />
+                        <span class="material-symbols-outlined">
+                            visibility
+                        </span>
+                    </div>
+
+                    <input type="submit" value="Update Profile" />
+                </form>
+            </div>
+
+            <div class="half-container">
+                <div class="upper-side">
+                    <div class="circle">
+                        <div class="semi-circle">
+                            <p>75%</p>
+                        </div>
+                    </div>
+                    <p>Profile Completeness</p>
+                </div>
+
+                <div class="bottom-side">
+                    <ul>
+                        <li>Create Account</li>
+                        <li>Update Roadmap Progress</li>
+                        <li>Setup Public Profile</li>
+                        <li>Complete your first project</li>
+                        <li>Inivite our Friends</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
