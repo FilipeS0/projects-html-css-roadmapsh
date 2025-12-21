@@ -1,41 +1,56 @@
 # Image Grid
 
-A small project demonstrating a responsive image grid built with HTML and CSS Grid.
+## Project Goal
 
-This repository contains a simple layout that arranges six images into a grid pattern using CSS Grid. The goal is to practice defining grid containers, placing items, and making the layout responsive.
+Create a responsive image grid layout using CSS Grid to practice advanced CSS layout techniques. The project demonstrates how to arrange multiple images in a flexible grid pattern that adapts to different screen sizes while maintaining a visually appealing design.
 
-## What I built
+## Features
 
--   A responsive grid layout using CSS Grid defined in `assets/style.css`.
--   An HTML structure in `index.html` that places six images into grid items.
--   Basic responsive behavior using `grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))` so items adapt to the viewport.
+-   **CSS Grid Layout**: Implements CSS Grid with `repeat(auto-fit, minmax(300px, 1fr))` for responsive columns
+-   **Responsive Design**: Automatically adjusts the number of columns based on viewport width
+-   **Variable Item Sizing**: Some grid items span multiple rows to create visual interest and variety
+-   **Clean Spacing**: Consistent 20px gap between grid items for proper spacing
+-   **Image Optimization**: Images scale responsively while maintaining aspect ratios
+-   **Semantic HTML**: Well-structured HTML with meaningful alt text for accessibility
 
-## Key learning objectives
+## Quick Start
 
--   **Grid Structure:** Define a grid container, columns and rows, and how items span multiple rows.
--   **Responsive Design:** Use `auto-fit` / `minmax()` to change layout across viewport sizes.
--   **Alignment and Spacing:** Control gaps and sizing to keep a clean visual rhythm.
+1. Clone or download the repository.
+2. Open [index.html](index.html) in your browser to preview the testimonial cards.
 
-## Files
+-   You can also click here to see [The result deployed](https://filipes0.github.io/image-grid)
+-   And look the goal: [The goal is this one](https://roadmap.sh/projects/image-grid)
 
--   `index.html` — markup for the image grid.
--   `assets/style.css` — styles implementing the CSS Grid layout.
--   `assets/images/` — the six images used in the grid.
+## Exercise Notes
 
-## How to view locally
+This project serves as a practical exercise in CSS Grid fundamentals:
 
-Open `index.html` in your browser, or run a simple static server from the project root:
+-   **Grid Structure**: Used `display: grid` with `grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))` to create a flexible column system that automatically wraps items based on available space
+-   **Responsive Behavior**: The `minmax(300px, 1fr)` ensures columns are at least 300px wide while growing to fill available space, creating a responsive layout without media queries
+-   **Item Spanning**: Applied `grid-row: span 2` and `grid-area: span 2` to select items, creating visual hierarchy and breaking monotony in the grid
+-   **Alignment**: Images are constrained with `max-width: 100%` and `max-height: 100%` to fit within their grid cells while maintaining aspect ratios
+-   **Gap Management**: Used consistent 20px gap for spacing, improving visual separation between items
 
-## TODO
+## Project Structure
 
--   [x] Create HTML structure and place images
--   [x] Implement CSS Grid layout and responsive columns
--   [ ] Confirm images and styles render correctly on multiple viewports
--   [ ] Add captions and improve accessibility (alt text already included)
--   [ ] Add a live demo / deploy to GitHub Pages
+```
+testimonial-cards/
+├── index.html          # Demo page showcasing the testimonial cards
+├── README.md           # This file
+├── LICENSE             # MIT License
+└── assets/
+    └── style.css       # Component styles
+```
 
-## Notes
+## Author
 
-The project uses `grid-row: span 2` on a few items to create taller tiles in the layout. You can tweak `minmax(300px, 1fr)` or the `max-width` on the container to change how the grid collapses on smaller screens.
+-   **LinkedIn:** [FilipeS0](https://linkedin.com/in/FilipeS0)
+-   **GitHub:** [FilipeS0](https://github.com/FilipeS0)
 
-If you'd like, I can add a demo GIF, improve accessibility, or deploy this to GitHub Pages next.
+## License
+
+This project is available under the MIT License. See the `LICENSE` file for details.
+
+## Feedback
+
+Contributions, suggestions, and PRs are welcome — please open an issue or submit a PR with improvements.
