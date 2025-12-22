@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 30vh auto;
+    width: 600px;
+    padding: 30px;
+
+    font-size: 2.5rem;
+}
+
+ul {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.response {
+    position: absolute;
+    bottom: 150%;
+
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+
+    background-color: black;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 1s linear;
+}
+
+.triangle {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    rotate: 45deg;
+
+    position: absolute;
+}
+
+.home-b:hover .home {
+    opacity: 1;
+    visibility: visible;
+}
+
+.home-b:hover .triangle {
+    left: 5%;
+    bottom: -10px;
+}
+
+.project-b:hover .project {
+    left: 0;
+
+    opacity: 1;
+    visibility: visible;
+}
+
+.project-b:hover .triangle {
+    left: 50%;
+    bottom: -10px;
+}
+
+.blog-b:hover .blog {
+    left: 0;
+
+    opacity: 1;
+    visibility: visible;
+}
+
+.blog-b:hover .triangle {
+    right: 5%;
+    bottom: -10px;
+}
