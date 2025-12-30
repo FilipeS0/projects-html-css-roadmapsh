@@ -1,0 +1,13 @@
+footer {
+    height: 4vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 519px) {
+    footer {
+        height: 20vh;
+    }
+}

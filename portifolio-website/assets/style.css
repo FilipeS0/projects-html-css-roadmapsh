@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+}
+
+main section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+section h2 {
+    padding: 6px 0;
+}
+
+.projects ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.projects ul li {
+    padding: 6px 0;
+    width: 100vw;
+    text-align: center;
+    border-bottom: 1px solid black;
+    background-color: #f0efef;
+}
+
+.projects ul li:first-child {
+    border-top: 1px solid black;
+}
+
+.work-experience {
+    max-width: 100vw;
+}
+
+.work-experience a {
+    text-decoration: none;
+}
+
+.roadmap,
+.opensource-work {
+    background-color: #f0efef;
+    width: 100vw;
+    max-width: 100%;
+    border-top: 1px solid black;
+    padding: 5px 0;
+}
+
+.opensource-work {
+    border-bottom: 1px solid black;
+}
+
+.roadmap h3,
+.roadmap p,
+.opensource-work h3,
+.opensource-work p {
+    padding: 5px 0;
+    width: 80%;
+}
+
+.education {
+    width: 100%;
+}
+
+.education p {
+    width: 100%;
+    text-align: start;
+}
+
+.education ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    width: 100%;
+}
+
+.education ul li:before {
+    content: "- ";
+}
+
+.education h2,
+.education p,
+.education ul {
+    padding: 5px 0;
+}
+
+.reviews div:nth-child(2),
+.reviews div:nth-child(3) {
+    display: none;
+}
+
+.reviews {
+    border-top: 1px solid black;
+    max-width: 100%;
+}
+
+.reviews .brief {
+    border: 1px solid black;
+    border-radius: 30px;
+    height: fit-content;
+    padding: 15px;
+    margin: 5px 0;
+    width: 80%;
+}
+
+.reviews p:nth-child(1) {
+    padding-bottom: 8px;
+}
+
+.reviews p:nth-child(2),
+.reviews p:nth-child(3) {
+    color: rgb(165, 165, 165);
+}
+
+@media (min-width: 519px) {
+    p,
+    a,
+    li {
+        font-size: clamp(1rem, 1.7vw, 3rem);
+    }
+
+    h1 {
+        font-size: clamp(2rem, 4vw, 6rem);
+    }
+
+    h2 {
+        font-size: clamp(1.7rem, 2.3vw, 4.5rem);
+    }
+
+    h3 {
+        font-size: clamp(1.5rem, 2.1vw, 4rem);
+    }
+
+    main {
+        display: grid;
+        grid-template: repeat(16, auto) / 2fr repeat(2, 3fr);
+    }
+
+    .projects {
+        grid-area: 1 / 1 / 8 / 2;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+
+    .work-experience {
+        grid-area: 1 / 2 / 8 / 3;
+        width: 100%;
+        max-width: 100%;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    .education {
+        grid-area: 1 / 3 / 8 / 4;
+        width: 100%;
+    }
+
+    .reviews {
+        grid-area: 8 / 1 / 16 / 4;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .projects > nav > ul li {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .projects > nav > ul li:nth-last-child(1) {
+        border-bottom: none;
+    }
+
+    .roadmap,
+    .opensource-work {
+        width: 100%;
+        background-color: initial;
+    }
+
+    .opensource-work {
+        border-bottom: none;
+    }
+
+    .reviews div:nth-child(2),
+    .reviews div:nth-child(3) {
+        display: initial;
+    }
+
+    .reviews h2 {
+        width: 100%;
+    }
+
+    .reviews.brief {
+        width: 30%;
+    }
+
+    .projects nav {
+        width: 100%;
+    }
+
+    .projects ul li {
+        background-color: initial;
+    }
+
+    .projects ul li:first-child {
+        border-top: none;
+    }
+
+    .reviews {
+        justify-content: center;
+        gap: 4vw;
+    }
+
+    .reviews h2 {
+        max-width: 80%;
+        margin-top: 3vh;
+    }
+
+    .reviews .brief {
+        max-width: 25%;
+    }
+}
